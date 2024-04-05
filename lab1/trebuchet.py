@@ -77,8 +77,8 @@ def trebuchet_game():
     )
     plot_trajectory(angle)
 
-    plt.show()
     plt.savefig("trebuchet.png")
+    plt.show()
 
 
 if __name__ == "__main__":
