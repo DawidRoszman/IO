@@ -24,6 +24,7 @@ for target, color in zip(targets, colors):
         c=color,
         s=50,
     )
+ax.set_title("Original Dataset")
 ax.legend(targets)
 ax.grid()
 
@@ -43,7 +44,7 @@ ax = fig.add_subplot(1, 1, 1)
 
 ax.set_xlabel("Sepal Length (Normalized)")
 ax.set_ylabel("Sepal Width (Normalized)")
-ax.set_title("Normalized Sepal")
+ax.set_title("Z-Core Scaled Dataset")
 
 targets = ["Setosa", "Versicolor", "Virginica"]
 colors = ["r", "g", "b"]
@@ -73,7 +74,7 @@ ax = fig.add_subplot(1, 1, 1)
 
 ax.set_xlabel("Sepal Length (Normalized)")
 ax.set_ylabel("Sepal Width (Normalized)")
-ax.set_title("Normalized Sepal")
+ax.set_title("Min-Max Normalized Dataset")
 
 targets = ["Setosa", "Versicolor", "Virginica"]
 colors = ["r", "g", "b"]

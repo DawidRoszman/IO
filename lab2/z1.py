@@ -10,10 +10,10 @@ columns = ["sepal.length", "sepal.width", "petal.length", "petal.width", "variet
 
 def replace_outliers_with_median(series):
     median = series[
-        (series >= 0) & (series <= 15)
+        (series > 0) & (series <= 15)
     ].median()  # Calculate median for values within the range
     return series.apply(
-        lambda x: median if x < 0 or x > 15 else x
+        lambda x: median if x <= 0 or x > 15 else x
     )  # Use apply with a lambda function
 
 
