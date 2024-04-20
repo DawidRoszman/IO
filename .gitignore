@@ -1,3 +1,5 @@
 env/
 .venv/
 dogs-cats-mini/
+*.h5
+*.keras

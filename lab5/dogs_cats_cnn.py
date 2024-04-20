@@ -131,39 +131,42 @@ validation_generator = validation_datagen.flow_from_dataframe(
 )
 
 epochs = 3 if FAST_RUN else 50
-history = model.fit(
-    train_generator,
-    epochs=epochs,
-    validation_data=validation_generator,
-    validation_steps=total_validate // batch_size,
-    steps_per_epoch=total_train // batch_size,
-    callbacks=callbacks,
-)
-model.save_weights("model.weights.h5")
+# history = model.fit(
+#     train_generator,
+#     epochs=epochs,
+#     validation_data=validation_generator,
+#     validation_steps=total_validate // batch_size,
+#     steps_per_epoch=total_train // batch_size,
+#     callbacks=callbacks,
+# )
+# model.save_weights("model.weights.h5")
+# model.save("model.keras")
 # history = model.load_weights("model.weights.h5")
 
-fig, (ax1, ax2) = plt.subplots(2, 1, figsize=(12, 12))
-ax1.plot(history.history["loss"], color="b", label="Training loss")
-ax1.plot(history.history["val_loss"], color="r", label="validation loss")
-ax1.set_xticks(np.arange(1, epochs, 1))
-ax1.set_yticks(np.arange(0, 1, 0.1))
+# fig, (ax1, ax2) = plt.subplots(2, 1, figsize=(12, 12))
+# ax1.plot(history.history["loss"], color="b", label="Training loss")
+# ax1.plot(history.history["val_loss"], color="r", label="validation loss")
+# ax1.set_xticks(np.arange(1, epochs, 1))
+# ax1.set_yticks(np.arange(0, 1, 0.1))
+#
+# ax2.plot(history.history["accuracy"], color="b", label="Training accuracy")
+# ax2.plot(history.history["val_accuracy"], color="r", label="Validation accuracy")
+# ax2.set_xticks(np.arange(1, epochs, 1))
+#
+# legend = plt.legend(loc="best", shadow=True)
+# plt.tight_layout()
+# plt.show()
 
-ax2.plot(history.history["accuracy"], color="b", label="Training accuracy")
-ax2.plot(history.history["val_accuracy"], color="r", label="Validation accuracy")
-ax2.set_xticks(np.arange(1, epochs, 1))
-
-legend = plt.legend(loc="best", shadow=True)
-plt.tight_layout()
-plt.show()
-
+model.load_weights("./model.weights.h5")
 test_filenames = os.listdir("dogs-cats-mini/test")
 test_df = pd.DataFrame({"filename": test_filenames})
 nb_samples = test_df.shape[0]
+print("Samples:", nb_samples)
 
 test_gen = ImageDataGenerator(rescale=1.0 / 255)
 test_generator = test_gen.flow_from_dataframe(
     test_df,
-    "../input/test1/test1/",
+    "dogs-cats-mini/test/",
     x_col="filename",
     y_col=None,
     class_mode=None,
@@ -172,7 +175,7 @@ test_generator = test_gen.flow_from_dataframe(
     shuffle=False,
 )
 
-predict = model.predict(test_generator, steps=np.ceil(nb_samples / batch_size))
+predict = model.predict(test_generator, steps=int(np.ceil(nb_samples / batch_size)))
 test_df["category"] = np.argmax(predict, axis=-1)
 
 label_map = dict((v, k) for k, v in train_generator.class_indices.items())
@@ -186,7 +189,7 @@ plt.figure(figsize=(12, 24))
 for index, row in sample_test.iterrows():
     filename = row["filename"]
     category = row["category"]
-    img = load_img("../input/test1/test1/" + filename, target_size=IMAGE_SIZE)
+    img = load_img("./dogs-cats-mini/test/" + filename, target_size=IMAGE_SIZE)
     plt.subplot(6, 3, index + 1)
     plt.imshow(img)
     plt.xlabel(filename + "(" + "{}".format(category) + ")")
