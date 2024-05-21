@@ -1,5 +1,6 @@
 import numpy as np
 import pandas as pd
+import tensorflow as tf
 from tensorflow.keras.preprocessing.image import load_img, ImageDataGenerator
 from tensorflow.keras.utils import to_categorical
 from tensorflow.keras.models import Sequential
@@ -201,3 +202,9 @@ submission_df["id"] = submission_df["filename"].str.split(".").str[0]
 submission_df["label"] = submission_df["category"]
 submission_df.drop(["filename", "category"], axis=1, inplace=True)
 submission_df.to_csv("submission.csv", index=False)
+
+converter = tf.lite.TFLiteConverter.from_keras_model(model)
+tflite_model = converter.convert()
+
+with open("model.tflite", "wb") as f:
+    f.write(tflite_model)
