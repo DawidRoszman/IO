@@ -12,7 +12,7 @@ for image in images:
     img = cv2.imread(f"./bird_miniatures/{image}")
     gray_img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
     # Apply birghness filter
-    blurred_img = cv2.GaussianBlur(gray_img, (1, 1), 0)
+    blurred_img = cv2.GaussianBlur(gray_img, (5, 5), 0)
     thresh = cv2.adaptiveThreshold(
         blurred_img, 255, cv2.ADAPTIVE_THRESH_GAUSSIAN_C, cv2.THRESH_BINARY_INV, 11, 2
     )
@@ -20,6 +20,7 @@ for image in images:
     # Morphological operations (closing)
     kernel = cv2.getStructuringElement(cv2.MORPH_RECT, (1, 1))
     closed_img = cv2.morphologyEx(thresh, cv2.MORPH_CLOSE, kernel)
+    #
     # brightness = 100
     # bright_img = cv2.addWeighted(blurred_img, 1, blurred_img, 0, brightness)
     _, thresh = cv2.threshold(
@@ -46,7 +47,8 @@ for image in images:
         x, y, w, h = cv2.boundingRect(cnt)
         cv2.rectangle(img_with_boxes, (x, y), (x + w, y + h), (0, 0, 255), 1)
 
-    cv2.imshow(f"{image}", img_with_boxes)
+    cv2.imshow(f"Binary {image}", closed_img)
     cv2.imshow(f"Original {image}", img)
+    cv2.imshow(f"{image}", img_with_boxes)
     cv2.waitKey(0)
     cv2.destroyAllWindows()
