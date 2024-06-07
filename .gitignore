@@ -4,3 +4,4 @@ dogs-cats-mini/
 *.h5
 *.keras
 bird_miniatures/
+*.weights

@@ -14,7 +14,7 @@ from tensorflow.keras.callbacks import EarlyStopping, ModelCheckpoint
 import matplotlib.pyplot as plt
 
 # Define directory and classes
-data_dir = "../lab5/dogs-cats-mini/train"
+data_dir = "../lab5/dogs-cats-mini"
 
 # Get list of image paths
 image_paths = [
