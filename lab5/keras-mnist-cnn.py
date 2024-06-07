@@ -103,3 +103,12 @@ plt.show()
 # Reshape służy do zmiany kształtu danych bez zmiany ich zawartości.
 # to _categorical konwertuje wektor klas całkowite liczby do binarnej macierzy klas. Jest  to użyteczne do "one-hot encoding" klas w problemach klasyfikacji.
 # np.argmax zwraca indeksy maksymalnych wartości wzdłuż osi.
+# Co się dzieje w preprocessing? Do czego służy funkcja reshape, to_categorical i np.argmax?
+# reshape służy do zmiany kształtu danych bez zmiany ich zawartości.
+# to_categorical konwertuje wektor klas całkowite liczby do binarnej macierzy klas.
+# Jest to użyteczne do "one-hot encoding" klas w problemach klasyfikacji. np.argmax zwraca indeksy maksymalnych wartości wzdłuż osi.
+# Jak dane przepływają przez sieć i jak się w niej transformują? Co każda z warstw dostaje na wejście i co wyrzuca na wyjściu?
+# Dane przepływają przez sieć od warstw wejściowych do warstw wyjściowych.
+# Jakich błędów na macierzy błędów jest najwięcej. Które cyfry są często mylone z jakimi innymi?
+# Jak zmodyfikować kod programu, aby model sieci był zapisywany do pliku h5 co epokę, pod warunkiem, że w tej epoce osiągnęliśmy lepszy wynik?
+# Można użyć callbacka ModelCheckpoint z parametrem save_best_only=True.

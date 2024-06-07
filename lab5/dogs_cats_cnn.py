@@ -179,12 +179,14 @@ test_generator = test_gen.flow_from_dataframe(
 predict = model.predict(test_generator, steps=int(np.ceil(nb_samples / batch_size)))
 test_df["category"] = np.argmax(predict, axis=-1)
 
+# Confusion Matrix and Classification Report
 label_map = dict((v, k) for k, v in train_generator.class_indices.items())
 test_df["category"] = test_df["category"].replace(label_map)
 test_df["category"] = test_df["category"].replace({"dog": 1, "cat": 0})
 test_df["category"].value_counts().plot.bar()
 sample_test = test_df.head(18)
 sample_test.head()
+
 
 plt.figure(figsize=(12, 24))
 for index, row in sample_test.iterrows():
@@ -202,9 +204,3 @@ submission_df["id"] = submission_df["filename"].str.split(".").str[0]
 submission_df["label"] = submission_df["category"]
 submission_df.drop(["filename", "category"], axis=1, inplace=True)
 submission_df.to_csv("submission.csv", index=False)
-
-converter = tf.lite.TFLiteConverter.from_keras_model(model)
-tflite_model = converter.convert()
-
-with open("model.tflite", "wb") as f:
-    f.write(tflite_model)

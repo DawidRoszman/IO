@@ -79,14 +79,14 @@ plot_model(model, to_file="model_plot.png", show_shapes=True, show_layer_names=T
 # Transformacja polega na odjęciu średniej i podzieleniu przez odchylenie standardowe.
 
 # Czym jest OneHotEncoder (i kodowanie "one hot" ogólnie)? Jak etykiety klas są transformowane przez ten encoder?
-# A: OneHotEncoder przekształca etykiety klas na wektory binarne, gdzie każda klasa jest reprezentowana przez wektor
+# OneHotEncoder przekształca etykiety klas na wektory binarne, gdzie każda klasa jest reprezentowana przez wektor
 # złożony z samych zer i jednej jedynki na pozycji odpowiadającej indeksowi klasy.
 # Na przykład, dla trzech klas: 0, 1, 2, etykieta 0 jest kodowana jako [1, 0, 0], etykieta 1 jako [0, 1, 0], a etykieta 2 jako [0, 0, 1].
 # W ten sposób model może łatwo przewidywać klasę, która ma najwyższe prawdopodobieństwo.
 
 # Model ma 4 warstwy: wejściową, dwie ukryte warstwy z 64 neuronami każda i warstwę wyjściową. Ile
 # neuronów ma warstwa wejściowa i co oznacza X_train.shape[1]? Ile neuronów ma warstwa wyjściowa i co
-#  oznacza y_encoded.shape[1]?
+# oznacza y_encoded.shape[1]?
 # Warstwa wejściowa ma tyle neuronów, ile cech ma każdy przykład w zbiorze danych. X_train.shape[1] oznacza liczbę cech w każdym przykładzie.
 # Warstwa wyjściowa ma tyle neuronów, ile klas jest w zbiorze danych. y_encoded.shape[1] oznacza liczbę klas w zbiorze danych.
 # W tym przypadku, warstwa wejściowa ma 4 neurony (4 cechy w zbiorze danych iris) i warstwa wyjściowa ma 3 neurony (3 klasy w zbiorze danych iris).
@@ -94,3 +94,10 @@ plot_model(model, to_file="model_plot.png", show_shapes=True, show_layer_names=T
 # Czy funkcja aktywacji relu jest najlepsza do tego zadania?
 # Funkcja aktywacji relu jest często stosowana w warstwach ukrytych sieci neuronowych, ponieważ pomaga w zapobieganiu zanikaniu gradientu.
 # W przypadku tego zadania, funkcja aktywacji relu jest odpowiednia, ponieważ działa dobrze w przypadku problemów klasyfikacji.
+#
+# Co możesz powiedzieć o wydajności sieci neuronowej na podstawie krzywych uczenia? W której epoce sieć
+# osiągnęła najlepszą wydajność? Czy ta krzywa sugeruje dobrze dopasowany model, czy mamy do czynienia z
+# niedouczeniem lub przeuczeniem?
+# Krzywe uczenia pokazują, że model uczy się dobrze, ponieważ zarówno dokładność treningu, jak i walidacji rosną wraz z liczbą epok.
+# Kiedy jest przeuczony model wedlug krzywych uczenia?
+# Model jest przeuczony, gdy dokładność walidacji zaczyna spadać, podczas gdy dokładność treningu nadal rośnie.
