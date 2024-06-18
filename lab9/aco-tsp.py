@@ -15,6 +15,9 @@ COORDS = (
     (29, 90),
     (87, 83),
     (73, 23),
+    (33, 44),
+    (45, 78),
+    (22,77),
 )
 
 
@@ -40,9 +43,9 @@ def plot_all_edges():
 
 plot_nodes()
 
-colony = AntColony(COORDS, ant_count=300, alpha=0.5, beta=1.2, 
-                    pheromone_evaporation_rate=0.40, pheromone_constant=1000.0,
-                    iterations=300)
+colony = AntColony(COORDS, ant_count=500, alpha=0.5, beta=1.2, 
+                    pheromone_evaporation_rate=0.20, pheromone_constant=1000.0,
+                    iterations=500)
 
 optimal_nodes = colony.get_path()
 

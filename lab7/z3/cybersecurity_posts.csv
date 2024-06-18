@@ -1,0 +1,501 @@
+date,title,content,score,url,num_comments
+1718729952.0,Unrestricted Resource Consumption in a Password Reset Vulnerability Case Study,,1,https://devsec-blog.com/2024/06/unrestricted-resource-consumption-in-a-password-reset-web-api-security-champion-part-iv/,0
+1718729359.0,OpenSSF's Siren To Warn About OSS Vulnerabilities,,1,https://www.i-programmer.info/news/149-security/17268-openssfs-siren-to-warn-about-oss-vulnerabilities.html,0
+1718728282.0,Moving to security tech sales. Any parting advice from my Infosec comrades?,I am joining the 'dark side' of Cybersecurity (i.e. technical sales) after 10+ years in Infosec consultancy. Any parting words of advice from my fellow practitioners? What should I avoid while working with end users and their management? Can you describe the perfect tech sales unicorn you'd love to work with and wouldn't want to block or ignore forever?,1,https://www.reddit.com/r/cybersecurity/comments/1diuy1w/moving_to_security_tech_sales_any_parting_advice/,0
+1718727817.0,Is this possible to get job using udemy certificate ,"Hi guys i recently completed my course in online about Ethical hacking is this possible to get job using udemy certificate????
+",1,https://www.reddit.com/r/cybersecurity/comments/1diur6d/is_this_possible_to_get_job_using_udemy/,2
+1718727118.0,Interview for class project,As the title says I’m looking for someone in the IT security analyst or cybersecurity analyst field (5+ years) to do a class informational interview project on! Your help would be greatly appreciated.,1,https://www.reddit.com/r/cybersecurity/comments/1diuh2z/interview_for_class_project/,0
+1718728062.0,Is there a way to copy a machine for malware analysis? ,"Hi there I’m not sure if this is the right sub for this, but I want to know if there is a way to make a copy of a machine that has been infected with malware for malware analysis? I’m been interested is the digital forensics side of cybersecurity, and I wanted to dive deeper into this topic. I’ve done something similar for a project is college, but we made a copy of a USB drive.",1,https://www.reddit.com/r/cybersecurity/comments/1diuutc/is_there_a_way_to_copy_a_machine_for_malware/,4
+1718727881.0,SIEM and EDR,"Let's say you have both EDR and SIEM in your organization. How much sense does it make to monitor your server with the EDR and also send system logs to the SIEM? Can we say that EDR makes tools like osquery, Sysmon, and basic system logs redundant, or are there other use cases that make them still relevant from a security point of view? Ignore compliance-related requirements for monitoring reports; focus just on attack detection.",2,https://www.reddit.com/r/cybersecurity/comments/1dius37/siem_and_edr/,2
+1718727245.0,ETW logs validation,"Working on validating that all event IDs requested by PA XDR agent are being collected on all our windows devices. Standard event logging logs we need seem to be easy enough to validate by looking at our advanced audit config GPO but I don't understand how to determine if ETW logs are enabled/being collected across our enterprise.
+
+Is there a good way to validate what ETW logs are being collected?",3,https://www.reddit.com/r/cybersecurity/comments/1diuizw/etw_logs_validation/,0
+1718724524.0,How Discord Built `Access!` - An Authorization Management Portal,,2,https://www.permit.io/blog/how-discord-built-access-an-authorization-management-portal,0
+1718723600.0,Cleveland City Hall again closed today because of ransomware attack,,9,https://www.cleveland.com/cityhall/2024/06/cleveland-city-hall-again-closed-today-because-of-ransomware-attack.html,0
+1718723225.0,"Bug Bounty Programs, Hacking Contests Power China's Cyber Offense",,2,https://www.darkreading.com/cybersecurity-operations/bug-bounty-programs-hacking-contests-power-chinas-cyber-offense,0
+1718660646.0,Okta Paying $60M Over Their Security Scandal,"Hey guys, if you were an investor in Okta back in 2021 (or you just monitor the news), you must have heard about this scandal.
+
+That's the short story for the newbies: in 2022, the hacker group LAPSUS$ shared screenshots on Telegram, showing they had accessed Okta's internal data.
+
+After that, Okta denied all that and stated that it was just “unsuccessful attempt”. But only a few days later, Todd McKinnon (CEO) confirmed the breach on his Twitter.
+
+After all that, not only direct customers were hurt, but their investors as well (obviously). And now they decided to resolve it with investors at least by paying $60M.
+
+So, if you were an investor back then, you can check if you're eligible and file for the [payment here](https://11thestate.com/cases/okta-investor-settlement).
+
+Anyway, do you think it's a fair sum for them? Or I suppose all scandals can be solved through the Twitter these days",1,https://www.reddit.com/r/cybersecurity/comments/1di9wtk/okta_paying_60m_over_their_security_scandal/,0
+1718661778.0,Is it worth it to look for internships in the field post grad?,I’ve still been in the process of looking for jobs in IT or cybersecurity and I’m wondering if it’s worth it to get a paid internship to get the experience? Internships do make me a little iffy because I could do one for a while and not receive an offer. I’m unsure if I should keep looking into them. Any advice?,0,https://www.reddit.com/r/cybersecurity/comments/1diacpn/is_it_worth_it_to_look_for_internships_in_the/,4
+1718668325.0,DNS queries resolving to Russian-hosted CDNs,"I'm based in the UK and using ControlD as a DNS filtering system. I have a simple config, and one of the rules is in large terms ""block domains that resolve to IPs belonging to Russia"".
+
+Starting yesterday I noticed large portions of the Internet not working correctly for me - such as LinkedIn, the CDN of SkyNews, some O365 and even some Apple services. After lots of digging I noticed they're all blocked by ControlD's policy I've set as resolving to RU. It can't be I said - must be a glitch with Control D.
+
+Top domains include some concerning ones:
+
+* r3.o.lencr.org
+* \*.dscq.akami.net
+* apps.identrust.com
+* amp-api-edge.apps.apple.com
+* gspe19-2-ssl.ls.apple.com
+* ced.sascdn.com
+* ctldl.windowsupdate.com
+* identity.nel.measure.office.net
+* static.licdn.com
+* statics.teams.cdn.office.net and many others.
+
+Running a quick dig and traceroute most of this traffic is actually resolving via Google DNS, Cloudflare and a few others to IP addresses hosted by Rostelecom. Requests seem to be  resolved by CDNs with a preference for Russia for a number of CDNs and I can't think of a good reason for this. I have reached to Control D user community for initial sanity check and I have found a few other users reporting the same behaviour.
+
+I initially suspected Akamai moved some blocks of IPs from Russia to EU and geo-location was not updated - which does happen every once in a while - but I can actually see BGP routing still advertising the Rostelecom AS numbers for a number of these addresses.
+
+For reference this is one ""landing"" IP range - [https://bgp.tools/prefix/2.16.53.0/24](https://bgp.tools/prefix/2.16.53.0/24)
+
+Any thoughts / investigations you can run in parallel would be greatly appreciated.",1,https://www.reddit.com/r/cybersecurity/comments/1dicrpf/dns_queries_resolving_to_russianhosted_cdns/,1
+1718679587.0,How to study GRC?,"Hi everyone :) I noticed more popular roles like in blue & red teaming for example have various roadmaps out there, along with project ideas. The stepping stones you need to do are clearly laid out. 
+
+But that's not the case for GRC, so I've come here. How would one learn GRC exactly?
+
+- Is it a good place to start with common security frameworks and standards (NIST, CIS, etc.), and where do you go after this? 
+- What are some beginner GRC projects?
+
+Thank you for your time!
+
+",0,https://www.reddit.com/r/cybersecurity/comments/1dighuz/how_to_study_grc/,2
+1718681587.0,Yet another question about Master's Degree,"I know this topic is saturated, I do feel like mine is a bit unique compared to others, but I'm sure everyone feels that way. Apologies for the long post; TLDR: active duty officer, looking good/efficient. route to become fortune 500 CIO in future
+
+I'm currently an active duty Naval Officer, working as the lead cyber security assessor and department head, which conducts cybersecurity training and assessments on Navy commands. My long term goal is to become a fortune 500 CIO and though I think that's an achievable goal, I know that will take some time. Additionally, I will be separating next year because I believe it would be beneficial for my goal to get civilian experience after 10 years of service.
+
+My short term goal is make efficient use of my next few years to set me up correctly for my long term goal. This includes utilizing my GI bill to obtains a masters (I'm an academic at heart and would love a PhD, or doctorate, but I don't believe this field has any desire for that), and applying to a job that lines up well with future goal. My choices are [SANS.edu](http://SANS.edu) masters or some well established cyber masters program like UC Berkeley, but I open to any path that I haven't considered. I'd like to pursue a masters because it's basically a ""free"" post-graduate degree, and the I believe I can balance the work load.
+
+My concerns (I'll start with the bad since I'm nervous about the future, but hopefully it's not as bad as I think):
+
+- Being a naval officer, I haven't been technical since college. While I understand the concepts, I'm no where near as good at programming, and project management as I was 10 years ago. I'm afraid my lack of expertise will be a deterrent for fortune 500 companies.
+
+- The Navy, and DOD network (DISA), is very different than civilian networks. I pray this isn't too big of a gap between civilian networks and deters employers from wanting to hire me.
+
+- If I were to stay in, theoretically, I'd be looking at around 170k where I live (Southern California), and I'd like to make around that. I wouldn't mind taking a pay cut while I'm learning the nuances of the new industry, but I'm very uneducated about this aspect.
+
+My redeeming features (lol):
+
+- I have a lot of leadership experience, and regularly act as an intermediary between technical and executive teams. (Lots of experience from Cyber Assessments and previous job)
+
+- I have a bachelors in Applied Physics and Computer Science, so I would actually be pretty happy if I had the opportunity to be hands on, even just as an intermediary immersion experience in the new industry.
+
+- While DoDIN networks are different, I'm familiar with the non-vendor specific cyber security concepts from my certs like CISSP, PenTest, and PMP.
+
+- If I decide to work for a company that would like me to have a higher degree, I have the GI bill in my back pocket which (maybe?) is an incentive to higher me.
+
+Regarding my connudrum of which program I should look into, I'm worried if a place like UC Berkeley would even want me. I had 3.5+ gpa from UCSC, 10 years of experience from the Navy, and a bunch of certs, but I haven't taken the GRE/GMAT. 
+
+Thank you for any advice, I really do appreciate any insight anyone could offer, and definitely open to new routes that I haven't listed.",0,https://www.reddit.com/r/cybersecurity/comments/1dih43h/yet_another_question_about_masters_degree/,2
+1718682528.0,How is the US cybersecurity job market for Immigrants?,"I am originally from the Philippines and have recently moved to USA (California). Now, I intend to hunt for a SOC or Cybersec Engineer job. I have 8 years of experience in the IT industry: 5 years in IT support with mixed of NetAd, and 3 years specifically in Cybersecurity, all gained while living in the Philippines. I hold a bachelor's degree in Information Technology. Is there a posible to get hired?
+
+
+
+Thank you for your advice!",1,https://www.reddit.com/r/cybersecurity/comments/1dihe2l/how_is_the_us_cybersecurity_job_market_for/,2
+1718682950.0,Got an Interview Call for SAP Cyber Security Analyst Role - Need Advice!,"Hi everyone,
+
+
+
+I've recently received an interview call for a **SAP Cyber Security Analyst** role, and I'm looking for some insights. I would appreciate any advice on the following:
+
+
+
+**Interview Questions:** What kind of questions should I expect during the interview? Are there specific areas of SAP or cybersecurity that I should focus on while preparing?
+
+
+
+**Daily Responsibilities:** What does a typical workday look like for an SAP Cyber Security Analyst? What are the main tasks and responsibilities involved in this role?
+
+
+
+Any tips or personal experiences would be really helpful. Thanks in advance!",1,https://www.reddit.com/r/cybersecurity/comments/1dihihz/got_an_interview_call_for_sap_cyber_security/,1
+1718687088.0,Advanced DF training/resources,"Hi everyone,
+
+As the title suggests, I have a basic understanding of digital forensics methodology and tools, but I’m looking for advanced training or resources (free or affordable). 
+
+Thanks in advance 🙏",0,https://www.reddit.com/r/cybersecurity/comments/1diip8r/advanced_df_trainingresources/,4
+1718693639.0,Security Signatures - OSINT,"Hello all, this question might sound amature so please pardon me. I am a newbie in Cyber Security. I am playing around with some OSINT tools and wanted to ask where I might be able to find some detection signatures (at least basic ones) for some widely used applications. Please guide. Thank you ",0,https://www.reddit.com/r/cybersecurity/comments/1dikcbz/security_signatures_osint/,0
+1718707370.0,How do you all stop thinking about work and start studying the important knowledge?,"Every time I want to study, I end up working on my work projects. How do you tell yourself that you should study things outside work?",0,https://www.reddit.com/r/cybersecurity/comments/1dinlql/how_do_you_all_stop_thinking_about_work_and_start/,7
+1718713173.0,Obfuscated HTML/JS Code,"I am doing this challenge and I am currently stuck. So it is an HTML file with <p> elements that are obfuscated 
+
+`<p class=""text"" id = ""VVZOIIYTgivura"" style=""font-style: none; font-color: 4px;  width:10px; height:10px; overflow:hidden;"">MSRSLws9N ScFZ CEOcEFjCyw lCW 8RNTU7W2 opSD USJE wzLhw/U3NsaF U9IAFkX3YHNC QdakJudjw XbWlIJQY 4DywrFT ZCNDQ 8OSU+C SocfkV4OVoqB yckOhx qHQw 5In4NKB MSIVMyI RkaM2FBeFM rTD43FDsW Oj4 mUi03HBcLOk RxY gF4EDYlPQA kcicnCQdEOTI rMBZiMD gjIiZbakh2EX gkDzYBJz gnHGo1DTc3 Nxg5 alN4 GXMjLQY/IAZj PDIWC WobKDM7Nn kTOgMA JEB/V3g /Wi4DIXE8H zpyV WNUago3MBd 4CzdsahQlIA VyU XYeLSwbLF9x Ii0APDca YVM lGCEuH2V AOzQhFSImUmN CZl x9YERkBjo naBsub0owGj oaPTAWMQ U7JQsdJCYaLB 8eAys2W GZFeHF vTi UwAiY QIkw8 Iw45 X3E1K QYraAkzAzoFO yMOMQ09f jBfO TsENR YkADElEix PYX1qU j4rGCZOdA 0oMhYxATIlI R0kfRBuAD8AL icINAs0O Txf eHBINBoyGDB/ WGlSY3R qUiI3ASQbIl F6c0poR3Fv b1lqdVQ zEiQN NWI UOQ8 2bG oBJScaIBZ0TC 4jFi0HbnMg Bj4iUmxcc Uc/Jw4TDT8w IR1ie0NkXHF HPycODBo/eW FZbX BIbE1 xR3hlRigDIT AlUiQz BSZOdAU2Kw4 IAy EwJQFoch4iHy MJZWAfIBY 2NC0R d3VDJB YiKDk2G 3BLeHZqXXRuR ywRPAk7NkRk TTc4Pkx2fQ4s ATtSf 3la PA0wJC UXJCZ GIR wyFXYrFD YHIRkcP wZyV WMXOQ8tLx 82Fn0zJxYzfA EtHTMeEBY3 FEJ4 cTwfOmlI Pg==</p>`
+
+ and then at the bottom there are obfuscated JS scripts that are referring to these <p> elements so the one referring to the above <p> is this one 
+
+`<script>`
+
+`if (!k){ for( var k=0; k<1;k++){;}}`
+
+  `lbrVjlGwo = ""pdh""+[].join("""") + ""mNfugcyGNx"";`
+
+`UJNWLSHSVV[lbrVjlGwo]('YTgivura',rZaWht)`
+
+`</script>`
+
+I am unable to deobfuscate the code, even when I run it through a base64 decoder or Ghidra I am not getting much information. where should I go from here? If you have any ideas I am willing to try anything. 
+
+This is the challenge description: 
+
+\* describe how the script was obfuscated
+
+\* what were the goal of each deobfuscated script blocks?
+
+\* include any IOC (Indication of Compromise) found",0,https://www.reddit.com/r/cybersecurity/comments/1dipa8j/obfuscated_htmljs_code/,1
+1718714603.0,Interesting Spearphishing Tactic,"Awareness and/or intel request…
+
+We have seen a couple attempts at this now, and I’m curious if others have experienced the same. Phishers are creating a mock email exchange between CEO and CFO outlining a major financial decision. It is formatted perfectly (like a multi- part email thread), and of course includes appropriate names and contact info in footers—it is convincing. The two reach an agreement in the email exchange. Phishers then forward the fake email to a second-tier member of the finance team (Accounts Payable, if possible), spoofing one of the executive’s email accounts, instructing him/her to implement said decision.
+
+Out of curiosity, I used two prompts in ChatGPT last night and created almost the same email, including formatting.
+
+Has anyone else seen this, or is it a very targeted attack against us?",4,https://www.reddit.com/r/cybersecurity/comments/1dipqwi/interesting_spearphishing_tactic/,2
+1718716043.0,How much do you willing to spend on courses from cyberinfluencers like Daniel Miessler?,His latest course is 999 usd,0,https://www.reddit.com/r/cybersecurity/comments/1diq8wm/how_much_do_you_willing_to_spend_on_courses_from/,22
+1718715203.0,What should I get in cybrary?,"Hey guys I graduated with my associate's in computer networking and I am not yet really good at it but I am still trying to lay some foundational knowledge and I found cybrary give free certs( i know this certs only enhance knowledge or teach you something new real quick) and I was hoping what should I get in cybrary. I am studying to get A+ hopefully but in the meantime, cybrary look good while I'm in chilling after college :\^). ",0,https://www.reddit.com/r/cybersecurity/comments/1dipy6l/what_should_i_get_in_cybrary/,1
+1718716104.0,Looking for a few large sample nmap output XMLs to test my new desktop app that allows to query scan results using SQL,I am also looking for beta users to help me test and provide feedback. Currently it is a Mac only desktop app. Please let me know. Thanks in advance. ,1,https://www.reddit.com/r/cybersecurity/comments/1diq9nw/looking_for_a_few_large_sample_nmap_output_xmls/,0
+1718716616.0,drzrghfcxzsfgxdhcfgyuftdrsdtfy,"Hi all has anyone come across this www.*.drzrghfcxzsfgxdhcfgyuftdrsdtfy. Com it appears to uses multiple ip address and when blocked on firewalls, seems to still be alerting on .",0,https://www.reddit.com/r/cybersecurity/comments/1diqg5p/drzrghfcxzsfgxdhcfgyuftdrsdtfy/,12
+1718712061.0,Maltego (or similar) Experience,"For those of you using maltego, or similar, how are you using it in your role, and what’s the biggest pain points you are experiencing? 
+I am considering bringing a link analysis investigation platform into our business, and interested in getting some actual user feedback. 
+
+Use cases: aid SOC, CTI, and possibly Fraud team.",2,https://www.reddit.com/r/cybersecurity/comments/1dioxsp/maltego_or_similar_experience/,1
+1718707310.0,"Can weak security be called a ""threat"", or should it be ""vulnerability"" instead?","Hi!
+
+In my college work I have to make a list of threats of a certain environment. Threats, not risks or vulnerabilities. When I google it, it often shows the list of risks or vulnerabilities alongside with threats. For example, weak endpoint security, weak network security, weak passwords.
+
+From the academical perspective, is it wrong if I include them to the list?
+
+edit: rephrasing it because it seemed dumb:   
+Is it wrong if I include ""Vulnerabilities in network security"" to the list of Threats?
+
+Many thanks!",29,https://www.reddit.com/r/cybersecurity/comments/1dinl7h/can_weak_security_be_called_a_threat_or_should_it/,38
+1718706328.0,New AI deepfake porn bill would require big tech to police and remove images,"Of course
+",98,https://www.cnbc.com/2024/06/18/senate-ai-deepfake-porn-bill-big-tech.html,30
+1718702647.0,VMware by Broadcom warns of critical vCenter flaws,,16,https://www.theregister.com/2024/06/18/vmware_criticial_vcenter_flaws/,3
+1718699510.0,Mentally Simulating IRP/DRP,"Hi guys hope all is well. I am reaching out to Reddit as I cannot get any content on the below on the internet.
+
+I formulated an IRP recently for the company that I work at and the plan has just been approved very recently. But now some of our big partners are asking for our IRP/DRP test results. This is an issue because we have not tested the plan as of yet and you guys know how CEOs feel about stopping operations to test a ""Document"". Can I provide our partners with test results from a Mental Simulated test for the time being until we gather some time to fully test our IRP?
+
+Any advice would be much appreciated.
+",1,https://www.reddit.com/r/cybersecurity/comments/1dilpq9/mentally_simulating_irpdrp/,4
+1718679496.0,Hack the Hacker - How to Setup an SSH Honeypot,,124,https://blog.sofiane.cc/setup_ssh_honeypot/,15
+1718672327.0,"South Korean tech firms form Red, Blue teams to combat AI abuse",,8,https://www.chosun.com/english/industry-en/2024/06/17/FMWXMHXYGVGKZHATIALYNSZLGM/,0
+1718671433.0,Seeking SOC management application,"I’m currently engaged in SOC development and am in search for an effective management tool. In the past, I’ve preferred using JIRA or SOAR platforms for case management.
+
+Could anyone recommend any dedicated alternatives specifically tailored to SOC operations?",1,https://www.reddit.com/r/cybersecurity/comments/1diduak/seeking_soc_management_application/,4
+1718663991.0,"HIBP Confirms 587,000 Zadig & Voltaire Customers Breached",,14,https://cyberinsider.com/hibp-confirms-587000-zadig-voltaire-customers-breached/,0
+1718662112.0,Equifax sells multifactor authentication (MFA) services but it does not offer ability to set up MFA to users of its myequifax website! Insane!,"https://www.equifax.com/resource/-/asset/product-sheet/secure-mfa-digital-transactions/
+
+Anyone who can authenticate using your username and password has access to virtually all your personal identification information.
+
+This is INSANE!",27,https://www.reddit.com/r/cybersecurity/comments/1diahfx/equifax_sells_multifactor_authentication_mfa/,8
+1718657292.0,What is the most misunderstood concept in Cybersecurity?,,90,https://www.reddit.com/r/cybersecurity/comments/1di8kge/what_is_the_most_misunderstood_concept_in/,111
+1718656804.0,Has anyone been selected for Jury Duty while working in the CyberSecurity field?,"I got summoned for Jury Duty but didn't get selected to be on the Jury for a criminal trial. I'm almost certain they dismissed me due to my occupation as a cybersecurity analyst since that was one of the only questions they asked me in the courtroom. I'm kinda bummed about not being selected too. Talking to my coworkers in my department, none have ever been selected to be on the Jury despite being summoned a few times.
+
+I was just wondering, is this is an industry norm? That way I could set my expectations next time I get a summons.",0,https://www.reddit.com/r/cybersecurity/comments/1di8dgw/has_anyone_been_selected_for_jury_duty_while/,11
+1718656142.0,Dump WhatsApp chat or exfiltrate internal data from any app on Android 12 and 13 using CVE-2024-0044,,2,https://www.mobile-hacker.com/2024/06/17/exfiltrate-sensitive-user-data-from-apps-on-android-12-and-13-using-cve-2024-0044-vulnerability/,0
+1718655835.0,High-severity vulnerabilities affect a wide range of Asus router models,,9,https://arstechnica.com/security/2024/06/high-severity-vulnerabilities-affect-a-wide-range-of-asus-router-models/,1
+1718655116.0,Should the power remain on during an incident ?,"Hello,
+
+I have an unfinished article I started writing a moment ago, and I wanted to have the opinions of Cyber Security professionals by making a poll and having a percentage of answers for those who agree or not.
+
+Of course I already started answering the question on the article, but wanted to have some statistics with it.
+
+Unfortunately, I couldn't do that on Twitter because I don't have enough people following.
+
+Thank you in advance.
+
+[View Poll](https://www.reddit.com/poll/1di7pch)",2,https://www.reddit.com/r/cybersecurity/comments/1di7pch/should_the_power_remain_on_during_an_incident/,12
+1718654066.0,Can malware access your bank and steal your money? It feels unlikely.,"I usually read on reddit how links can be dangerous. That's true but i also read how they gonna steal all your money. This part seems little exaggerate. Like with random link in email i would download malware that's gonna steal all my money from bank account? I would understand ""scam call"" where the victim would send the money or stealing credit card info. But i don't understand malware getting access to bank. Posts about that feels little unrealistic.
+
+Let me explain:
+
+1. In my country every bank has mobile banking app that's used for approving payments and access. You always need phone. Every bank has 2FA. Its default. You must have smartphone. (There are actually special accounts for people without mobile but those are limited in options. You have lower limits. Not every bank has this type of account. Its not standart. You need to specifically ask bank for that.) There is no SMS login in normal bank. You always need to accept login in mobile app with fingerprint.
+2. Every time you want send money or change settings you need to accept it on your app with fingerprint. If you want for example send money to ten people you need to accept it ten times with your fingerprint.
+3. In case you lost your access you need to go to the bank personally. There is no easy ""i forgot password option."" (Actually nowadays at least in my bank, there is option to get access to bank from home but you need to record your voice, record your face, record your id card, pretty long process. Also I'm not sure if this option would work in case of different phone)
+4. If you buy new phone you could transfer your bank. But you need access to your old phone, otherwise point three apply.
+5. You have only few attempts with password. Otherwise locked account and point three apply.
+6. There are other security measure. Like app have access to your location and if anything unusual happen your bank call you. (It actually happened to me, i just wanted to buy something with debit card but it was foreign website and bank called me if i really want to approve my payment.)
+
+Those are pretty standart points. Its not my bank specific. Even my dad, ten years ago when there wasn't mobile banking. He still had some physical key with totp. And he still needed to use that number every time he wanted to buy anything or change anything in his bank account.
+
+Its seems extremely unlikely. Especially if you are not some high value target. I personally heard about three people who lost money. Two times it was stolen credit card info and one time scam call. Never stolen bank account, but from some news on reddit. It sound like there are malwares that attack bank accounts. I never studied security. **I'm just curious if those post really exaggerate or I'm missing something.** Because attacker would need to get access to phone with some malware, steal your fingerprint and then redirect the call from bank. Those steps seems possible but really unlikely. I just don't get it.
+
+Sorry if that's wrong subreddit. I don't know where to ask, but i thinking about that for past days.
+
+",0,https://www.reddit.com/r/cybersecurity/comments/1di79nd/can_malware_access_your_bank_and_steal_your_money/,24
+1718652689.0,"AppSec - Critical Vuln ID'd on API, Workarounds?","We have a team deploying a new application in the next month. After a pentest was run, we detected a Critical vuln on an API related to a Weak SSL Cipher. Guidance is for them to disable weak ciphers. The team tells us that once deployed, this API will be disabled as it was only needed for deployment.
+
+Any thoughts on risks of accepting this vulnerability and not remediating it since the API will be disabled post-launch?",4,https://www.reddit.com/r/cybersecurity/comments/1di6pxa/appsec_critical_vuln_idd_on_api_workarounds/,6
+1718651890.0,What first certifications would not only be good for HR but also skill?,"UPDATE: 
+So I managed to have the opportunity to get all these certs Cloud+, sec+, net+ a+, Linux+ and CCNA. Though I just discovered I also have the options of
+ -Microsoft Certified: Azure Developer
+Associate  
+-Microsoft Certified: Azure Developer
+Associate  with industry certification 
+-AWS Certified Developer
+-AWS Certified SysOps Administrator
+
+So net+, linux+, a+ are combined and can’t be individually switched. But the others can [cloud+,sec+,CCNA] now I understand that I should take the first three being I know nothing of it haha THO being ahead of the game would y’all say get the 6 certs or cloud+,sec+,CCNA and one of the aws / Microsoft certs? ",54,https://www.reddit.com/r/cybersecurity/comments/1di6egk/what_first_certifications_would_not_only_be_good/,93
+1718648444.0,"Vulnerability Summary for the Week of June 10, 2024 | CISA",,1,https://www.cisa.gov/news-events/bulletins/sb24-169,0
+1718647844.0,"House, Senate defense bills OK Cyber Force",,9,https://www.scmagazine.com/brief/house-senate-defense-bills-ok-cyber-force,4
+1718647760.0,Cops cuff 22-year-old Brit suspected of being Scattered Spider leader,,53,https://www.theregister.com/AMP/2024/06/17/scattered_spider_arrest/,11
+1718645757.0,"As an average Joe, what might be the most shocking about Cybersecurity that everyone doesn't know?",,280,https://www.reddit.com/r/cybersecurity/comments/1di3xz5/as_an_average_joe_what_might_be_the_most_shocking/,264
+1718645245.0,Any leadership programme actually worth it?,"Is there any leadership programme that will actually make a difference in your career progression? I have all the credentials and degrees i need w/ 5 YOE, but I'm wondering if any leadership courses will make a difference pr grab attention on a resume?",0,https://www.reddit.com/r/cybersecurity/comments/1di3qp3/any_leadership_programme_actually_worth_it/,7
+1718642627.0,What are some of the latest tricks that Social Engineering hackers have tried doing recently?,,26,https://www.reddit.com/r/cybersecurity/comments/1di2o1f/what_are_some_of_the_latest_tricks_that_social/,40
+1718640061.0,Memory Forensic Tools Stack,"In this Memory Forensic blog, we mentioned some of the essential tools used in memory forensics, check them out!
+
+I am going to update it soon, as there are some additional helpful tools which can be used in certain scenarios - you will not expect some of them, so stay tuned :)
+
+Let me know what other tools you are using in memory forensics too \^\^",2,https://www.reddit.com/r/cybersecurity/comments/1di1n2z/memory_forensic_tools_stack/,3
+1718639676.0,What do people think about all of these new “AI”-based ids systems?,"A number of companies are bringing these things to market, suggesting their products have low rates of false alarms and they’re able to pick up a lot of different suspicious activity and worse.",13,https://www.reddit.com/r/cybersecurity/comments/1di1hdw/what_do_people_think_about_all_of_these_new/,29
+1718639537.0,Shodan and cobaltstrike ,,2,https://medium.com/@inteldalal/part-1-digging-into-asns-for-threat-hunting-cobalt-strike-3c1c9326354d,0
+1718638696.0,Is Anaconda a known security risk now?,"It is not infrequent that the changes rolled out by Corporate leave us baffled wondering wtf they are thinking. The last one: amongst other things, Anaconda is now 100% banned. It must be erased from all PCs and access to its website is blocked too. Full damnatio memoriae.
+
+...If only we didn't have a whole department doing data science and machine learning?
+
+So, does anyone know if there is a credible reason for this? We have a meeting with Business at the end of the week where we will have to illustrate the coming changes, and I fully expect a thunderstorm, so I would like to have some concrete facts to expose...
+
+  
+EDIT: it is unlikely to be a licensing issue. We already have a process for this, licensed software can be installed if the projects pay for the license; unlicensed software removed until a license is purchased is business as usual. A total prohibition of a software is definitely unusual and typically only happens for security reasons.",28,https://www.reddit.com/r/cybersecurity/comments/1di13f5/is_anaconda_a_known_security_risk_now/,23
+1718636536.0,Security awareness training for developers?,"	
+Do you know of any courses, books, or other resources that train developers on cybersecurity and instill a healthy sense of paranoia?
+
+I'm looking for something focused on topics like handling credentials, protecting their machines, avoiding phishing, etc, rather than on building secure applications (like the OWASP-10).
+
+I have been trained with KnowB4 in the past, but they are for a much wider, non-technical audience.",2,https://www.reddit.com/r/cybersecurity/comments/1di085y/security_awareness_training_for_developers/,7
+1718636009.0,Gov Contractor Advice Needed,"Hey yall I made a long post yesterday but saw it was deleted without any notice of why, so I'm gonna try reposting it while redacting some information. 
+
+For background I am about a year and a half out of my bachelors degree and am currently employed as a Reverse Engineer contractor for a three letter agency in the Washington DC area. I make 120k currently with national average raise rates yearly. 
+
+Recently the government agency where I am employed notified me that if a job posting with them were to open up that they would ""direct hire"" me at my same salary and job title. The only issue was that they were unsure when (or if) a posting would open ""soon"". As it were put to me, it could take months or it could take years. I'm trying to assess which route is better long term, federal (starting at a high grade) vs contractor. I understand government jobs pay less and my salary would not experience the rapid growth I've seen in the past, but the security and the retirement benefits I understand are top notch and ive been a little sick of not being fully included in job related actions due to my status as a contractor and not a full employee. I was curious if other folks have any insight on either route. Thanks in advance!",4,https://www.reddit.com/r/cybersecurity/comments/1di00j6/gov_contractor_advice_needed/,7
+1718635372.0,Best Security Awareness Training Platforms,"What are the best security awareness training platforms in terms of content and ease of use. 
+
+Is KnowBe4 the number 1? ",2,https://www.reddit.com/r/cybersecurity/comments/1dhzrot/best_security_awareness_training_platforms/,7
+1718634856.0,Best certifications ,"Hi guys! I've been working as cyber security consultant for almost 2 years now, I've a very standard salary and I work in fully remote so I can't complain that much, but I start to feel a bit stuck. I would like to take a certification and then find a different job, to take my career into the next level and to find the right motivation to improve my skills because I don't know very much honestly. I've started in a very entry-level position and I still do very simple stuff in my company, like vulnerability assessments or helping my collegues in penetration tests by testing some vulnerabilties with the help of automatic tools like Qualys and Burp Suite. What do you recommend for someone at my level and with this type of experience? Thanks in advance! ",1,https://www.reddit.com/r/cybersecurity/comments/1dhzkli/best_certifications/,0
+1718633347.0,(Forbes) Google Chrome Will Track You For The Next 200 Days—Then It May Get Worse,,17,https://www.forbes.com/sites/zakdoffman/2024/06/16/google-chrome-tracking-on-windows-android-iphone-for-200-more-days/,1
+1718633232.0,ScriptBlock Smuggling: Spoofing PowerShell Security Logs and Bypassing AMSI Without Reflection or Patching,,2,https://www.linkedin.com/pulse/scriptblock-smuggling-spoofing-powershell-security-logs-bypassing-pg67c/?trackingId=oKuFfc9uS92rrXuThRAfCw%3D%3D,0
+1718632545.0,Holes drilled through laptops - pics/story?,"Dear Blue and Read Team redditors, I am failing to find \_one\_ or \_the\_ story and pictures about how someone drilled holes through a laptop, purportedly in specific places, to destroy specific chips/parts on the motherboard. 
+
+Does anyone have links? I'm doing a bit about travel security, they would be handy.",0,https://www.reddit.com/r/cybersecurity/comments/1dhyoic/holes_drilled_through_laptops_picsstory/,8
+1718629720.0,Hackers Detail How They Allegedly Stole Ticketmaster Data From Snowflake,,145,https://www.wired.com/story/epam-snowflake-ticketmaster-breach-shinyhunters/,23
+1718628329.0,Is changing domain considered bad when it comes to pentesting,"I am network security engineer from India with 10+ yrs of experience, I have been studying and to find a pen-testing or cybersecurity job but one thing I noticed is majority of time my profile is being rejected stating that I don't have relevant experience.
+
+I am OSCP certified, done lots of HTB and other CTFs,Pretty much aware about tools being used for pentesting, aware about the process even if its something new i can learn.
+
+From OS/networking side I have experience with network,firewall,active directory,antivirus,IPS etc.
+
+I am really disappointed by getting rejection only because few recruiters think I dont have any pentesting skills or relevant experience and few recruiters think my CTF, self studies and Offsec training experience is not sufficient.
+
+Am i doing any mistake by trying to change my domain?
+
+Whether experience in other domain don't have any value at all,As far as I know to be a good pentester you should know about all aspects of network but HRs dont care about such things.?
+
+Am it too old for domain change now, I am in mid 30s..?",27,https://www.reddit.com/r/cybersecurity/comments/1dhx6ql/is_changing_domain_considered_bad_when_it_comes/,25
+1718627929.0,How difficult is it to spoof a phone number?,I use MFA for most of my website with secondary auth going to my mobile device. I read somewhere that there is a way to spoof my number on a different phone and receive my SMS messages. Is this true and how complex is this?,5,https://www.reddit.com/r/cybersecurity/comments/1dhx239/how_difficult_is_it_to_spoof_a_phone_number/,10
+1718626941.0,Bypassing Okta’s Passwordless MFA: Technical Analysis and Detection,,3,https://www.rezonate.io/blog/bypassing-oktas-passwordless-mfa-technical-analysis-and-detection/,0
+1718619576.0,Do you read those Cybersec thoughtfluencer in substack? Are they really good?,"Like those Ventures in Sec, TDLRsec type of blogs",0,https://www.reddit.com/r/cybersecurity/comments/1dhupsl/do_you_read_those_cybersec_thoughtfluencer_in/,1
+1718616484.0,Best API Security,"Hello! I am working on a personal project for practice with development. I have a Minecraft server that interacts with my API. Currently I added no type of security (anyone with the url will get the data). 
+
+What is the best type of method to use here as if this was a real world case? Ideally I don’t want the user/pass hard coded into the plugin as in worse case if the plugin is stolen they now have the credentials.  
+
+I was thinking IP white listing but I am not sure if that is too weak for security? 
+
+While playing with ChatGPT it’s suggestion was to generate an API token and store it in the SQL table, but I thought it was odd that it wanted to have the token auto refresh when used, my theory is you’d want a token to expire and generate a new one incase a hacker guesses the token since it’s not changing often?",1,https://www.reddit.com/r/cybersecurity/comments/1dhtzmo/best_api_security/,1
+1718612098.0,What certs are important in Germany? ,"Hi guys,
+
+I’m working as a dev and I’m trying to transition into more cyber security oriented role in time. 
+I was thinking about doing certs, but I browsed a ton of various job offers, and they’re usually not required. I live in Germany. 
+Does anyone knows anything more about it? Is CompTIA not a thing in Germany? Are there any other, more respected certs to take, maybe more German oriented, like perhaps from TÜV? 
+What would you recommend to someone like me? 
+
+Thanks in advance for any answers. ",2,https://www.reddit.com/r/cybersecurity/comments/1dhszm1/what_certs_are_important_in_germany/,1
+1718611130.0,USA -> EU Job Resources ,"Looking for any advice/resources for finding jobs as an American in Europe. Would ideally work for US company remotely but I have seen requirements that require you to live in NA etc… 
+
+I would be looking for 7+ years exp GRC/Security Analyst/ Consulting positions. I have a Bachelors degree, SEC+ and CISSP. Would be happy to work on-site for EU companies of course but I figure US would pay better. I assume I would need to apply for work VISA/blue card/ digital nomad VISAs before I begin the interview process. 
+
+Country is not of utmost importance but ideally Italy/France/Netherlands. I have done some brief research via job boards common in America but they seem fairly bare whereas I have heard of some expats/digital nomads who do my goal on here. Wonder if it’s a networking thing or if there are better job posting sites for EU specifically. Lastly would I really be qualified as sought after/skilled worker?",1,https://www.reddit.com/r/cybersecurity/comments/1dhsrc2/usa_eu_job_resources/,2
+1718594160.0,"Hobby project in cyber security, to get going ?","I am in mid 40's working as an individual contributor. Sick of rat race and office politics. More importantly, feel sad that I have not been able to achieve anything meaningful in life. So,I am thinking of doing some hobby project with no expectations. With such a low entry barrier, I know its hard to monetise. At least, it will keep me occupied and I will learn something.  Anyone else in the same boat and tried something?. It will be of great help, if you could share your experience. ( PS: I am not asking for any specific ideas here. I have to admit, I hate the heavy usage of marketing/hype in cyber security, and also the fact that its hard to keep one up to date in this field)  
+",0,https://www.reddit.com/r/cybersecurity/comments/1dhohj0/hobby_project_in_cyber_security_to_get_going/,0
+1718580599.0,Feeling Underpaid in Cybersecurity Consulting – Advice Needed!,"
+Hey everyone,
+
+Intro: Im a pentester from india having 3+ years of experience. I do pentest on all applications like web mobile network thick client etc etc, i do bug bounty as well.
+
+I need some advice and perspective. I'm currently working in cybersecurity consulting and have over 3 years of experience. Despite this, I'm only earning around 9 LPA (Lakhs Per Annum). Meanwhile, I see my friends with just 2 years of experience making close to 20 LPA in similar roles.
+
+I'm starting to feel really undervalued and unsure about my next steps. Have any of you been in a similar situation? What did you do to bridge the pay gap? Any tips on negotiating a better salary or finding higher-paying opportunities in the field?
+
+Thanks in advance for your insights!
+",0,https://www.reddit.com/r/cybersecurity/comments/1dhkcb6/feeling_underpaid_in_cybersecurity_consulting/,4
+1718578052.0,Hard to study,"I really love red teaming and hacking but i find it hard to stay motivated and to keep myself studying.
+
+I feel like if i dont study every single day then i will never make it, so whenever i take a break I feel awful
+
+I find it hard to play any game because i feel like im wasting time when i should be studying
+
+
+Furthermore I feel like im getting too old to do hacking whenever i see younger people talk about it and show their stuff (im 20) 
+
+Is this normal? Any suggestions to make myself study?",0,https://www.reddit.com/r/cybersecurity/comments/1dhjhes/hard_to_study/,14
+1718557410.0,Cybersecurity entry level jobs EU,"For the people that work in the eu, I plan to study cybersec at ETH Zurich in switzerland. How is the job progression in the eu?
+
+
+ I've heard that in the US you need atleast 5 years of experience for an internship or entry level job (/s)",1,https://www.reddit.com/r/cybersecurity/comments/1dhc2cu/cybersecurity_entry_level_jobs_eu/,0
+1718553428.0,Data scientist in the cybersecurity domain - is it feasible?,"The company I work with has an opening for a Data Scientist/Data Engineer in the Cybersecurity team. I have a degree in Mathematics, have been working with data analytics for some years (some basic modelling involved, including text analytics, some outlier detection, but nothing extremely sophisticated) and I'm considering to apply.
+
+  
+Since I would not want to make a move that's obviously unreasonable to people with domain experience, I have the following questions:
+
+1. Is doing data science or at least more advanced data analytics in the cybersec domain even feasible or is the hiring manager just trying to sound cool and everything is likely handled within specified cybersec software (e.g. SIEM software)?
+2. Would you be able to advise any questions that would serve as ""bullshit detectors""?
+
+",1,https://www.reddit.com/r/cybersecurity/comments/1dhan1m/data_scientist_in_the_cybersecurity_domain_is_it/,2
+1718550630.0,Seeking Help with DDoS Mitigation for Streaming Platform Using Cloudflare and Custom Rules,"Hello everyone,
+
+I'm seeking advice and support from this community regarding persistent DDoS attacks on our streaming platform. Our site hosts a variety of content, including movies, series, animes, eBooks, and live sports streams.
+
+**Situation Overview:**
+
+* **Platform:** Our platform is built on Next.js and hosted on a root server. We use Cloudflare for CDN and security, leveraging Cloudflare Workers to deliver content from Backblaze B2 buckets.
+* **Duration of Attacks:** We've been experiencing DDoS attacks for the past six months, typically occurring every 1-2 weeks.
+* **Attack Pattern:** Attacks generally last between 0.5 to 2 hours. Recently, they have coincided with our live streams of the Euro Championship 2024 football games, previously targeting our most active times.
+* **Type of Attacks:** We are facing both volumetric and application-layer attacks.
+* **Targets:** The primary targets include:
+   1. [`webpage.com/crew/page/*`](http://webpage.com/crew/page/*)
+   2. [`webpage.com/_next/image`](http://webpage.com/_next/image)
+   3. [`webpage.com/`](http://webpage.com/)
+
+**Current Security Measures:**
+
+* **WAF and CDN:** We are using Cloudflare’s proxy for website security and content delivery.
+* **Custom Rules:** Here are the custom rules we have implemented to mitigate the attacks. They are partially effective, blocking about half of the requests during an attack. For instance, during a recent attack with 37 million requests, 19 million were blocked.
+
+**Custom Rules:**
+
+1. **Country-based Blocking:Action:** BlockplaintextCopy code (ip.geoip.continent in {""AF"" ""AN"" ""SA"" ""T1"" ""OC""} or  [ip.geoip.country](http://ip.geoip.country) in {""AF"" ""AG"" ""AW"" ""BS"" ""BH"" ""BD"" ""BB"" ""BZ"" ""BM"" ""BT"" ""BN"" ""KH"" ""KY"" ""CN"" ""CR"" ""US"" ""CU"" ""DM"" ""DO"" ""ID"" ""AS"" ""KR"" ""NL"" ""EC"" ""SV"" ""GD"" ""GP"" ""GT"" ""HT"" ""HN"" ""IN"" ""ID"" ""IR"" ""IQ"" ""JM"" ""JP"" ""JO"" ""KZ"" ""KP"" ""KR"" ""KW"" ""KG"" ""LA"" ""LB"" ""MY"" ""MV"" ""MQ"" ""MN"" ""MM"" ""NP"" ""NI"" ""OM"" ""PK"" ""PS"" ""PA"" ""PH"" ""PR"" ""QA"" ""VC"" ""SA"" ""SG"" ""LK"" ""SY"" ""TW"" ""TJ"" ""TH"" ""TL"" ""TT"" ""TM"" ""AE"" ""UZ"" ""VN"" ""VI"" ""NL"" ""YE"" ""XX"" ""EG""}  and ip.geoip.asnum in {8075 213230 35540 16276 20860 396982 136907 55933 396319 55990 133478 58519 202053 200350 24940})  
+2. **Blocking Unwanted Access to Specific Paths:Action:** BlockplaintextCopy code http.request.uri.path eq ""/\_next/image""  and not http.referer contains ""mekobre.com""  
+3. **Blocking Undefined Requests:Action:** BlockplaintextCopy code http.request.uri.path contains ""/tvshow/undefined"" or http.request.uri.path contains ""/movie/undefined"" or http.request.uri.path contains ""/undefined"" or http.request.uri.path eq ""/assets/avatars/undefined.png"" or http.request.full\_uri contains ""\`undefined\`"" or http.request.full\_uri contains ""undefined"" or http.request.full\_uri contains ""'undefined'"" or http.request.uri.path contains ""/publisher/ads-D-2.png"" or http.request.uri.path contains ""/publisher/ads-D-3.png"" or http.request.uri.path contains ""/publisher/ads-M-1.png"" or http.request.uri.path contains ""/publisher/ads-M-2.png"" or http.request.uri.path contains ""/publisher/ads-M-3.png"" or http.request.uri.path contains ""/publisher/ads-M-4.png"" or http.request.uri.path contains ""/publisher/ads-D-1.png"" or http.request.uri.path contains ""/api/movies/"" or http.request.uri.path contains ""/api/movies?id=undefined"" or http.request.uri.path contains ""undefined"" or http.request.full\_uri contains ""undefined"" or http.request.uri.path contains ""1769"" or http.request.full\_uri contains ""1769"" or http.request.uri.path contains ""/favicon.ico""  
+
+**Current Team Setup:** Our team is small, comprising two developers, two product owners, and two content creators/sales representatives. Being a startup, the attacks seem aimed at hindering our growth.
+
+**Request for Assistance:** We are looking for:
+
+1. Recommendations for additional or improved WAF rules.
+2. Tips on modifying our existing rules to be more effective.
+3. Any templates or examples of custom rules that have worked well for others in similar situations.
+4. General advice on enhancing our DDoS protection and mitigation strategies.
+
+Your expertise and any assistance you can provide would be greatly appreciated. Thank you in advance for your support!",0,https://www.reddit.com/r/cybersecurity/comments/1dh9n58/seeking_help_with_ddos_mitigation_for_streaming/,1
+1718543464.0,Risk management tool,"I am looking for a risk management tool. I need a tool to track, follow-up update and report on the set of risks I am managing. I m looking for something efficient either free, opensource or not. Please help",1,https://www.reddit.com/r/cybersecurity/comments/1dh7a7u/risk_management_tool/,0
+1718623940.0,Notorious cyber gang UNC3944 attacks vSphere and Azure,,6,https://www.theregister.com/2024/06/17/unc3944_scattered_spider_tactics_change/,0
+1718623631.0,Hackers Exploit Legitimate Websites to Deliver BadSpace Windows Backdoor - RedPacket Security,,9,https://www.redpacketsecurity.com/hackers-exploit-legitimate-websites-to-deliver-badspace-windows-backdoor/,0
+1718612694.0,Critical Security Vulnerability CVE-2024-3912 (CVSS 9.8) Hits ASUS Routers,,21,https://securityonline.info/critical-security-vulnerability-cve-2024-3912-hits-asus-routers/,0
+1718599753.0,Volunteer in Cybersecurity in the Philippines.,Is there any ngo that accept volunteers to work in stuff like cybersecurity?,0,https://www.reddit.com/r/cybersecurity/comments/1dhq11t/volunteer_in_cybersecurity_in_the_philippines/,2
+1718597809.0,Are organisations fined in the case of a zero-day attack?,"Exactly what the title suggests. In the case of a zero-day attack on an organisation (which I know is very rare), if PII or SPII is compromised, does the organisation still face fines and penalties?
+",18,https://www.reddit.com/r/cybersecurity/comments/1dhpiji/are_organisations_fined_in_the_case_of_a_zeroday/,13
+1718526563.0,Creating LinkedIn honeypot profiles for corporate security purposes,"I'm currently managing several cybersecurity projects, and we've been encountering a troubling trend where attackers are using LinkedIn to breach our client's systems. Here are some issues we've been facing:
+
+* Fake recruiters: Impersonators posing as recruiters trying to gather information about our internal systems, presumably to identify vulnerabilities.
+* Poaching attempts: Real recruiters persistently attempting to get advance knowledge of future resignations to then try to cold call us offering their services with resumes of potential replacements.
+* Market intelligence firms: They offer seemingly attractive assignments (e.g., $500/hour) to get our employees to reveal trade secrets. This is against the employment contract employees sign. We need to know who they are to send cease and desist letters.
+* Salespeople: Adding multiple employees to extract small pieces of information, which they then piece together.
+* Interview candidates: Trying to get staff to divulge interview questions or methodologies.
+
+Unfortunately, banning staff from using LinkedIn isn't a feasible solution. On the other hand, continuing as is has already led to incidents like phishing attacks and ransomware directly tied to the LinkedIn information harvesting.
+
+We're considering setting up honeypot accounts to draw these malicious actors in, allowing us to profile and do reconnaissance on them. However, we're uncertain about the best way to implement this or if there are other effective solutions.
+
+Has anyone dealt with similar issues? What strategies or tools have you found effective in countering these malicious activities? Any advice on setting up honeypot accounts or alternative methods for monitoring and mitigating these threats would be greatly appreciated!",4,https://www.reddit.com/r/cybersecurity/comments/1dh34cz/creating_linkedin_honeypot_profiles_for_corporate/,4
+1718548961.0,Are cybersec competitions only red-teaming?,"Not sure if this is the correct sub for this since I've observed it's mostly for industry folk, but I'm heading to college and my college has a cybersec competition team. I want to get into the competitive side of cybersec for fun. However, I am mostly finding CTFs, bug bounties and things like that as recommendations for practice. Do we do any blue-teaming in these events? I'm not that keen on pentesting and things like that, so if it's only CTF challenges or something I'd prefer dropping it early.",1,https://www.reddit.com/r/cybersecurity/comments/1dh9240/are_cybersec_competitions_only_redteaming/,1
+1718552621.0,TI workflow for in-house SOC?,"Hi everyone,
+
+Our in-house SOC team has grown quite a bit, and I'm starting to think about implementing a meaningful Threat Intel workflow. Any tips and tricks? Links to research and guides? Thanks in advance.",1,https://www.reddit.com/r/cybersecurity/comments/1dhacno/ti_workflow_for_inhouse_soc/,0
+1718580355.0, A Newbie's Idea on Reuse-Protected Refresh Token Rotation. ,"Hi everyone,
+
+New to cybersecurity! I'm learning about authentication and stumbled upon refresh tokens. [Auth0's article](https://auth0.com/blog/refresh-tokens-what-are-they-and-when-to-use-them/#Refresh-Token-Rotation) mentioned ""refresh token rotation,"" which intrigued me. It seems like the basic idea is keeping track of used tokens to invalidate them on reuse.
+
+However, wouldn't a constantly growing list of used tokens be inefficient? Here's an idea:
+
+* **Database:** Stores nonces (random, unique values) and counts (initially zero).
+* **Token Generation:** Encrypt the current count and a random nonce.
+* **Token Verification:** Decrypt the token to retrieve the nonce.
+   * If the nonce isn't found, the token is invalid (discard).
+   * If the count in the token matches the table's count, the token is valid:
+      * Increment the table's count.
+      * Generate a new token with the updated count (rotation).
+   * If the counts differ, the token is invalid (remove nonce & count).
+
+Is this a good approach for refresh token rotation?",1,https://www.reddit.com/r/cybersecurity/comments/1dhk9jn/a_newbies_idea_on_reuseprotected_refresh_token/,0
+1718590240.0,Help - Report Writing,"hi everyone,
+
+I have just come into a new role. I have been asked to improve my report writing skills. Can anyone help with any courses or resources that I can look at? Hoping to get any guidance I can.",1,https://www.reddit.com/r/cybersecurity/comments/1dhnbve/help_report_writing/,3
+1718583080.0,"First Cert test soon, am I ready?","Hello,
+
+I am studying for security + right now and my exam is Tuesday but I am unsure if I am ready and had a few questions.
+
+- I get an 85% ( highest score was. 90%) on the comptia certmaster practice exams regularly, but I have taken 6 of them and am worried I am only getting that score because I see a lot of recurring questions.
+
+- how similar is the actual exam to the certmaster practice tests?
+
+- what other website has valid practice exams that I can take to see if I am ready?
+
+- some questions on the practice exams are really obvious and easy answers revealed just in the question. Does the actual exam have question like that as well?
+
+Thanks for the help",13,https://www.reddit.com/r/cybersecurity/comments/1dhl5bj/first_cert_test_soon_am_i_ready/,12
+1718582411.0,"Mentorship Monday - Post All Career, Education and Job questions here!","This is the weekly thread for career and education questions and advice. There are no stupid questions; so, what do *you* want to know about certs/degrees, job requirements, and any other general cybersecurity career questions? Ask away!
+
+Interested in what other people are asking, or think your question has been asked before? Have a look through prior weeks of content - though we're working on making this more easily searchable for the future.",22,https://www.reddit.com/r/cybersecurity/comments/1dhkxcn/mentorship_monday_post_all_career_education_and/,132
+1718577481.0,"Those of you working remote, are you within driving distance?","Those of you working remote, are you required to go into the office so you have to remain within driving distance? Just curious if you could get hired on at a major company, but be elsewhere in the country. As an example, obtain a good job in DC, but live in West Virginia. HCOL job, LCOL state.",61,https://www.reddit.com/r/cybersecurity/comments/1dhja5l/those_of_you_working_remote_are_you_within/,95
+1718575092.0,How much in your daily life are you actually working!? ,From someone who has no idea of CS other than some YouTube vids and Reddit… do you truly have free time vs a 9-5? Idk if that’s the correct question to ask for what I’m looking for but I’m wanting to get into a field that would create more opportunities for family time and decent money! ,166,https://www.reddit.com/r/cybersecurity/comments/1dhigdk/how_much_in_your_daily_life_are_you_actually/,236
+1718574841.0,Learning paths tips,"Tips on hands-on learning
+
+Hi,
+I am a software engineer who is curious on the cybersecurity space, specially offensive security. I have been watching videos and doing some research on Kali tools, HackTheBox and others. I was curious if anyone did a more hands-on practical approach to learning (which would be helpful since that is how I have learned most stuff on my engineering career) that could give me some tips?
+
+My end goal is to get some understanding to hopefully run some bug bounties (money or not we’ll see later on, I know it is not particularly easy to monetize it), and who knows, if I get very into it potentially steering towards cybersecurity for my career. 
+
+Anything helps!",7,https://www.reddit.com/r/cybersecurity/comments/1dhid6f/learning_paths_tips/,3
+1718564272.0,I've been looking at disputed CVEs: is it better safe than sorry for vulnerabilities relying on user misuse of packages?,"I come across many disputed CVEs that claim a given vulnerability is only present when say a user does something that is ""known to be insecure"", like entering a password through a CLI parameter option or a buffer overflow if they don't call the initialize and delete function on a C package.
+
+I'm very curious on where the line is on this for things that are bogus vs valid. On one hand there are instances of this that are the nature of languages, like C memory management or not using parameters for SQL calls in a language that allows strings. But at some point, is it valid to say they should not be giving users this option in the first place?
+
+Would love any resources to read up on.",16,https://www.reddit.com/r/cybersecurity/comments/1dhejkg/ive_been_looking_at_disputed_cves_is_it_better/,5
+1718569830.0,Does Windows Runtime Security (RASP or eBPF equivalent) exist?,"Hello fellow security engineers,
+
+I was doing some research this weekend and I seem to be struggling to find a solution for Windows runtime security.  Our environment is composed of different types of compute: Windows Ec2, Linux Ec2, EKS, and lambda functions. 
+
+Right now, our cloud security program uses Snyk as our ""left side"" - preventative security layer, by deploying scanners within the CICD pipeline to prevent vulnerabilities from being introduced to the environment. We also run Wiz as our ""middle"" - observability layer to detect misconfigurations and vulnerabilities across our cloud estate. Finally, for the ""right side"" - protection layer, I'd like to deploy a series of different runtime security tools to block malicious activity after something is deployed and running. 
+
+Wiz has a runtime sensor for both Kubernetes and Linux OS, but doesn't have anything for Windows OS (yet?). So, I'm trying to find something to fill this gap. However, I can't seem to find a modern ""runtime security"" tool for Windows OS (EC2) instances other than what I would consider old school anti-malware. Does anything like a RASP or eBPF-like tool exist for Windows? I know eBPF is Linux specific, that's what I'm saying ""ePBF-like"". 
+
+If something like what I'm describing doesn't exist, what would the community recommend? Is something like Cylance good enough?
+
+I appreciate the communities assistance with this!
+
+Thanks.",1,https://www.reddit.com/r/cybersecurity/comments/1dhgkbo/does_windows_runtime_security_rasp_or_ebpf/,0
+1718570386.0,Triaged data and sent it to wrong client… it gets worse,"I’m a security analyst and I totally sent data to the wrong client. I’m at an ethical dilemma right now bc instead of fixing the mistake right away I deleted the ticket even though the client still received an email. I admit I panicked and tried to resolve the mistake my own way but instead I believe I made it worse by doing this. I honestly think I’m going to lose my job over this given the current climate with the client right now and how they do not see the value in our services. 
+
+Separately, I recently sent a wrong hostname to a client who called it out and I know this seems similar but honestly what I did now is way worse and I feel awful about it. 
+
+Honestly this a series of unfortunate events that happened within the last month and I feel like a complete moron. I do not think this is my best work and know this is not something I regularly do.
+
+I would like to send this information to my management team and I most likely will and will reach out to the client letting them know but any advice from someone with the same experience would be great 😔",1,https://www.reddit.com/r/cybersecurity/comments/1dhgrof/triaged_data_and_sent_it_to_wrong_client_it_gets/,3
+1718564016.0,"Did the attempt to enforce TLS gone wrong way, making private keys centralised and therefore less secure? Imagine a data leak of CF keys? Or, targeted Man in the Middle made easier creating false sense of security. ",,0,https://www.certic.info/ssl2020.php,11
+1718562924.0,Ask r/CyberSecurity: Place to find info and details on specific attacks?,"Is there a place (website, Forum, disccord, etc) where it's possible to find more information on specific hacks of sites/companies? 
+
+For example, recently there was an attack on a semi-big web hotel company in my country. The attack that took down all its customers' sites (ransomware). But the company has not published anything technical on the attack itself (attack vector, vulnerabilities used, timeline, if any known group was behind it, and so on). And I want to know the details. So - is there a place where the attackers typically go and claim the credit and perhaps talk about how they did it?
+
+Cheers",7,https://www.reddit.com/r/cybersecurity/comments/1dhe2ei/ask_rcybersecurity_place_to_find_info_and_details/,4
+1718560735.0,What You Get After Running an SSH Honeypot for 30 Days,,331,https://blog.sofiane.cc/ssh_honeypot/,43
+1718557527.0,Are there cyber security business owners on this platform?,"Hi there guys,
+
+So I'd like to introduce myself on this subreddit and am looking forward to becoming a part of the community.
+
+To begin with, I am a freelance writer, with a background in Computer Science. Over the years, I have worked with clients across various industries to create content in the form of blogs and articles but recently I have begun to understand that I have a strong interest and passion for tech and cyber security related topics.
+
+I hopped on for two purposes:
+One being, engaging with like minded individuals in the community.
+
+And the second one is where I am particularly interested in collaborating with business owners to create optimized and organic content for their websites.
+
+Feel free to hit me up in the comments if you'd like to learn more or if you'd know someone who would be into the service I offer.
+
+TIA :)",0,https://www.reddit.com/r/cybersecurity/comments/1dhc3vz/are_there_cyber_security_business_owners_on_this/,14
+1718555367.0,Applying Bayesian theorem in Data Retention and destruction. When 100% is far less than one anticipate. ,,2,https://www.certic.info/bayesian_vs_data_retention.php,0
