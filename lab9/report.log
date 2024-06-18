@@ -6,3 +6,7 @@
 2024-06-07 12:48:59,454 - pyswarms.single.global_best - INFO - Optimization finished | best cost: 0.0017085070260033496, best pos: [-0.01175395  0.03962766]
 2024-06-07 12:49:00,873 - matplotlib.animation - WARNING - MovieWriter imagemagick unavailable; using Pillow instead.
 2024-06-07 12:49:00,873 - matplotlib.animation - INFO - Animation.save using <class 'matplotlib.animation.PillowWriter'>
+2024-06-14 11:04:53,053 - pyswarms.single.global_best - INFO - Optimize for 50 iters with {'c1': 0.5, 'c2': 0.3, 'w': 0.5}
+2024-06-14 11:04:53,064 - pyswarms.single.global_best - INFO - Optimization finished | best cost: 1.2336088042048015e-15, best pos: [ 2.06996951e-08 -2.83748379e-08]
+2024-06-14 11:04:54,708 - matplotlib.animation - WARNING - MovieWriter imagemagick unavailable; using Pillow instead.
+2024-06-14 11:04:54,708 - matplotlib.animation - INFO - Animation.save using <class 'matplotlib.animation.PillowWriter'>

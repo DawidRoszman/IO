@@ -1,7 +1,7 @@
 from time import time
 import pygad
 
-# Define the items available
+# Define the available items
 inventory = [
     {"item_name": "clock", "item_weight": 7, "item_value": 100},
     {"item_name": "painting-landscape", "item_weight": 7, "item_value": 300},
